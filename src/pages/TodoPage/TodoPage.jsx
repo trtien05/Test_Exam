@@ -1,11 +1,13 @@
 import React from 'react';
 import Todo from '../../components/Todo/Todo';
-
+import { Typography } from 'antd';
+import * as Styled from './TodoPage.styled';
 const TodoPage = () => {
   return (
-    <div style={{ maxWidth: 600, margin: '0 auto', padding: 20 }}>
+    <Styled.TodoContainer>
+      <Typography.Title level={1}>Task Manager</Typography.Title>
       <Todo />
-    </div>
+    </Styled.TodoContainer>
   );
 };
 
