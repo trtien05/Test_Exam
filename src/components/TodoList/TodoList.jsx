@@ -15,7 +15,7 @@ const TodoList = ({ tasks, setTasks }) => {
 
   return (
     <div>
-      <Styled.TutorList
+      <Styled.TaskList
         bordered
         pagination={{
           position: 'bottom',
@@ -25,7 +25,7 @@ const TodoList = ({ tasks, setTasks }) => {
         align
         dataSource={tasks}
         renderItem={(task) => (
-          <Styled.TutorItem
+          <Styled.TaskItem
             key={task.id}
             actions={[
               <Checkbox
@@ -35,7 +35,7 @@ const TodoList = ({ tasks, setTasks }) => {
             ]}
           >
             <List.Item.Meta title={<p>{task.name}</p>} />
-          </Styled.TutorItem>
+          </Styled.TaskItem>
         )}
       />
     </div>
